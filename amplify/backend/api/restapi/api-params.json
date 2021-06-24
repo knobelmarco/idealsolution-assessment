@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/applicants",
+      "lambdaFunction": "restapilambda",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/applicants"
+    }
+  ],
+  "resourceName": "restapi",
+  "apiName": "restapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "restapilambda"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-reactamplified-dev-213747-authRole",
+    "unAuthRoleName": "amplify-reactamplified-dev-213747-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "restapilambda",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
